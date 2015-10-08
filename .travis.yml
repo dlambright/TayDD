@@ -5,7 +5,7 @@ branches:
  - master
  
 xcode_project: TayDD.xcodeproj
-xcode_scheme: SwifternalizationTests
+xcode_scheme: TayDDTests
 osx_image: xcode7
 xcode_sdk: iphonesimulator9.0 
  
