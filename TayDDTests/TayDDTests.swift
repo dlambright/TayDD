@@ -49,7 +49,7 @@ class TayDDTests: XCTestCase {
         
         // colorDistance should be 360.624451
         colorDistance = testModel.getDistanceBetweenColors(red, color2: blue)
-        XCTAssert(colorDistance > 360 && colorDistance < 361)
+        XCTAssert(colorDistance > 375 && colorDistance < 361)
         
         // colorDistance should be 360.624451
         colorDistance = testModel.getDistanceBetweenColors(red, color2: blue)
