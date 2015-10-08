@@ -1,0 +1,14 @@
+language: objective-c
+ 
+branches:
+ only:
+ - master
+ 
+xcode_project: TayDD.xcodeproj
+xcode_scheme: SwifternalizationTests
+osx_image: xcode7
+xcode_sdk: iphonesimulator9.0 
+ 
+script:
+- xcodebuild clean build test -project TayDD.xcodeproj -scheme TayDDTests
+
