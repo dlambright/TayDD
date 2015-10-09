@@ -20,6 +20,34 @@
                ReferencedContainer = "container:TayDD.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "A8C126B41BC3026D003B6F02"
+               BuildableName = "TayDDTests.xctest"
+               BlueprintName = "TayDDTests"
+               ReferencedContainer = "container:TayDD.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "A8C126BF1BC3026D003B6F02"
+               BuildableName = "TayDDUITests.xctest"
+               BlueprintName = "TayDDUITests"
+               ReferencedContainer = "container:TayDD.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
       </BuildActionEntries>
    </BuildAction>
    <TestAction
