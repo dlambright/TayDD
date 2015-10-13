@@ -9,5 +9,6 @@ xcode_scheme: TayDDTests
 xcode_sdk: iphonesimulator9.0 
  
 script:
- - xcodebuild clean build test -project TayDD.xcodeproj -scheme TayDDTests
+ - xcodebuild clean build -project TayDD.xcodeproj -scheme TayDDTests -destination 'platform=iOS Simulator,name=iPhone 6,OS=9.0' test
+ - xcodebuild clean build -project TayDD.xcodeproj -scheme TayDDUITests -destination 'platform=iOS Simulator,name=iPhone 6,OS=9.0' test
 
