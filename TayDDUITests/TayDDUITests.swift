@@ -46,7 +46,7 @@ class TayDDUITests: XCTestCase {
         app.buttons["DEE"].tap()
         tayButton.tap()
         
-        let iHateSwiftStaticText = app.staticTexts["I hate Swift"]
+        let iHateSwiftStaticText = app.staticTexts["Happy"]
         iHateSwiftStaticText.doubleTap()
         iHateSwiftStaticText.doubleTap()
     }

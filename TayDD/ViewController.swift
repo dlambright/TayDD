@@ -30,7 +30,7 @@ class ViewController: UIViewController {
     }
     
     @IBAction func touchTay(sender: AnyObject) {
-        lblSuccess.text = "I hate Swift"
+        lblSuccess.text = "Happy"
     }
 }
 
