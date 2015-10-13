@@ -31,6 +31,12 @@ class TayDDUITests: XCTestCase {
     func testTouchButtons() {
         let app = XCUIApplication()
         
+//        let button = app.staticTexts["Tay"]
+//        let exists:NSPredicate = NSPredicate(format:"exists==1")
+//        self.expectationForPredicate(exists, evaluatedWithObject: button, handler: nil)
+//        self.waitForExpectationsWithTimeout(30, handler: nil)
+
+        
         app.buttons["Tay"].tap()
         app.buttons["D"].tap()
         app.buttons["DEE"].tap()
@@ -47,7 +53,6 @@ class TayDDUITests: XCTestCase {
         tayButton.tap()
         
         let iHateSwiftStaticText = app.staticTexts["Happy"]
-        iHateSwiftStaticText.doubleTap()
         iHateSwiftStaticText.doubleTap()
     }
     
