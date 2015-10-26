@@ -30,17 +30,12 @@ class TayDDUITests: XCTestCase {
    
     func testTouchButtons() {
         let app = XCUIApplication()
-        
-//        let button = app.staticTexts["Tay"]
-//        let exists:NSPredicate = NSPredicate(format:"exists==1")
-//        self.expectationForPredicate(exists, evaluatedWithObject: button, handler: nil)
-//        self.waitForExpectationsWithTimeout(30, handler: nil)
-
-        
+     
         app.buttons["Tay"].tap()
         app.buttons["D"].tap()
         app.buttons["DEE"].tap()
-        app.staticTexts["Success"].doubleTap()        
+        XCTAssert(app.staticTexts["Success"].exists)
+        
     }
     
     func testTayButtonOutput(){
@@ -57,9 +52,25 @@ class TayDDUITests: XCTestCase {
     }
     
     // Value of label should be "I luv Swift"
-//    func testDButtonOutput(){
-//        
-//    }
+    func testDButtonOutput(){
+        
+        let app = XCUIApplication()
+        let tayElement = app.otherElements.containingType(.Button, identifier:"Tay").element
+        tayElement.tap()
+        tayElement.tap()
+        app.buttons["Tay"].tap()
+        
+        let dButton = app.buttons["D"]
+        dButton.tap()
+        app.buttons["DEE"].tap()
+        dButton.tap()
+        app.staticTexts["I luv Swift"].doubleTap()
+        
+    }
+    
+    func testDeeButtonOutput(){
+        //TODO:  Do.
+    }
     
     
     
