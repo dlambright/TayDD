@@ -26,9 +26,19 @@ class TayDDUITests: XCTestCase {
     override func tearDown() {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
         super.tearDown()
-    }    
-   
-    func testTouchButtons() {
+    }
+    
+    // Label output shoud be "happy"
+    func testTayButtonOutput(){
+        let app = XCUIApplication()
+        
+        app.buttons["D"].tap()
+        app.buttons["DEE"].tap()
+        app.buttons["Tay"].tap()
+        XCTAssert(app.staticTexts["Happy"].exists)
+    }
+    // Label output should be "Success"
+    func testDeeButton() {
         let app = XCUIApplication()
      
         app.buttons["Tay"].tap()
@@ -38,39 +48,12 @@ class TayDDUITests: XCTestCase {
         
     }
     
-    func testTayButtonOutput(){
-        
-        let app = XCUIApplication()
-        let tayButton = app.buttons["Tay"]
-        tayButton.tap()
-        app.buttons["D"].tap()
-        app.buttons["DEE"].tap()
-        tayButton.tap()
-        
-        let iHateSwiftStaticText = app.staticTexts["Happy"]
-        iHateSwiftStaticText.doubleTap()
-    }
-    
     // Value of label should be "I luv Swift"
     func testDButtonOutput(){
         
-        let app = XCUIApplication()
-        let tayElement = app.otherElements.containingType(.Button, identifier:"Tay").element
-        tayElement.tap()
-        tayElement.tap()
-        app.buttons["Tay"].tap()
-        
-        let dButton = app.buttons["D"]
-        dButton.tap()
-        app.buttons["DEE"].tap()
-        dButton.tap()
-        app.staticTexts["I luv Swift"].doubleTap()
         
     }
     
-    func testDeeButtonOutput(){
-        //TODO:  Do.
-    }
     
     
     

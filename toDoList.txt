@@ -1,0 +1,15 @@
+explain tests briefly
+command-u to show how project is run
+change happy to glad
+run
+change code to match
+run
+copy-paste into testDButtonOutput
+make necessary changes
+run
+delete testDButtonOutput code
+record actions
+show code
+
+
+
